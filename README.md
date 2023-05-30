@@ -1,4 +1,4 @@
-# HW #1 - Interactive SVG Icons 
+# HW #1 - Interactive SVG Icons - Burple Flavours
 
 The following page serves as an overview to Burple's sparkling water drink. It has interactive icons representing the
 different flavours for each drink.
