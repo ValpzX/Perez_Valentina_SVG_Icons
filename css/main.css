@@ -3,6 +3,7 @@
 
     1.  General Styles
     2.  Flavours Section Styles
+    3.  SVG Icon Interactivity
 
 */
 
@@ -70,3 +71,42 @@ svg {
 .flavour-section p {
     font-style: italic;
 }
+
+/* ---End of Flavours Section Styles--- */
+
+
+/* 3. ---SVG Icon Interactivity--- */
+
+#grapes:hover {
+    filter: grayscale(30%);
+}
+
+#strawberry:hover {
+    filter: grayscale(30%);
+}
+
+#cherry:hover {
+    filter: grayscale(30%);
+}
+
+#peach:hover {
+    filter: grayscale(30%);
+}
+
+#orange:hover {
+    filter: grayscale(30%);
+}
+
+#mango:hover {
+    filter: grayscale(30%);
+}
+
+#lemon:hover {
+    filter: grayscale(30%);
+}
+
+#watermelon:hover {
+    filter: grayscale(30%);
+}
+
+/* ---End of SVG Icon Interactivity--- */
