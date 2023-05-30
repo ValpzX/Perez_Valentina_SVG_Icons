@@ -3,6 +3,7 @@
 
     1.  General Styles
     2.  Flavours Section Styles
+    3.  SVG Icon Interactivity
 
 */
 
@@ -71,6 +72,143 @@ svg {
     font-style: italic;
 }
 
-#grapes {
-    fill: inherit;
+/* ---End of Flavours Section Styles--- */
+
+
+/* 3. ---SVG Icon Interactivity--- */
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
 }
+
+#grapes:hover {
+    filter: grayscale(30%);
+    animation: wiggle 2s linear infinite;
+}
+
+@keyframes pulse {
+    50% {
+      transform: scale(1.05);
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}
+
+#strawberry:hover {
+    filter: grayscale(30%);
+    animation: pulse 1.5s ease infinite;
+}
+
+@keyframes swing {
+    20% { 
+        transform: rotate(15deg); 
+    }   
+    40% { 
+        transform: rotate(-10deg); 
+    }
+    60% { 
+        transform: rotate(5deg); 
+    }   
+    80% { 
+        transform: rotate(-5deg); 
+    }   
+    100% { 
+        transform: rotate(0); 
+    }
+}
+
+#cherry:hover {
+    filter: grayscale(30%);
+    transform-origin: top center;
+    animation: swing 2s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+#peach:hover {
+    filter: grayscale(30%);
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+#orange:hover {
+    filter: grayscale(30%);
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes float {
+    0% { 
+        transform: translate(0,  0); 
+    }
+    50%  { 
+        transform: translate(0, 15px); 
+    }
+    100%   { 
+        transform: translate(0, -0); 
+    }   
+}
+
+#mango:hover {
+    filter: grayscale(30%);
+    animation: float 2.5s ease-in-out infinite
+}
+
+#lemon:hover {
+    filter: grayscale(30%);
+    transform: rotateY(180deg);
+}
+
+@keyframes side-to-side {
+    40% { 
+        transform: rotate(-15deg);
+    }
+    70% { 
+        transform: rotate(0);
+    }
+}
+
+#watermelon:hover {
+    filter: grayscale(30%);
+    animation: side-to-side 2s infinite;
+}
+
+/* ---End of SVG Icon Interactivity--- */
