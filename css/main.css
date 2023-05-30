@@ -59,8 +59,8 @@ section h2, section h3, section p {
 /* 2. ---Flavours Section Styles--- */
 
 .flavour-section svg {
-    width: 300px;
-    height: 300px;
+    width: 75%;
+    height: 75%;
     margin-bottom: 10px;
 }
 
