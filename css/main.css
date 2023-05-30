@@ -2,8 +2,9 @@
     CSS Guide 
 
     1.  General Styles
-    2.  Flavours Section Styles
-    3.  SVG Icon Interactivity
+    2.  Introduction Section Styles
+    3.  Flavours Section Styles
+    4.  SVG Icon Interactivity
 
 */
 
@@ -21,9 +22,16 @@ img, embed, object, video, picture {
     max-width: 100%;
 }
 
-p, h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
     margin: 0px;
     padding: 0px;
+    color: rgb(35, 35, 35);
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(55, 55, 55);
 }
 
 a {
@@ -56,7 +64,20 @@ section h2, section h3, section p {
 /* ---End of General Styles--- */
 
 
-/* 2. ---Flavours Section Styles--- */
+/* 2. ---Introduction Section Styles--- */
+
+#logo {
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/* ---End of Introduction Section Styles--- */
+
+
+/* 3. ---Flavours Section Styles--- */
 
 .flavour-section svg {
     width: 65%;
@@ -75,7 +96,7 @@ section h2, section h3, section p {
 /* ---End of Flavours Section Styles--- */
 
 
-/* 3. ---SVG Icon Interactivity--- */
+/* 4. ---SVG Icon Interactivity--- */
 
 @keyframes wiggle {
     0%, 7% {
